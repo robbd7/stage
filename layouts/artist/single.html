@@ -15,7 +15,7 @@
     <section class="container">
       <h3>Discography</h3>
       <br />
-      {{ range where .Site.Recent.ByDate.Reverse "Section" "album" }}
+      {{ range where .Site.RegularPages "Section" "album" }}
         {{ if eq .Params.author $author }}
           {{ .Render "summary" }}
         {{ end }}

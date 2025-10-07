@@ -1,27 +1,29 @@
 ---
-baseurl: "/"
-theme: "stage"
+baseurl: "https://robbhagle.com/"
+languageCode: "en-us"
+title: "Robb Hagle"
 metaDataFormat: "yaml"
 params:
 
   # Website information
-  title: "Stage"
-  subtitle: "A Hugo theme for musicians and creative types."
-  coverimage: "/images/stage.jpg"
+  title: "Robb Hagle"
+  subtitle: "Vintage Folk Artist"
+  coverimage: "/images/robb-hagle-cover.jpg"
 
   # Social information
   social:
-    facebook: "http://facebook.com/"
-    soundcloud: "http://soundcloud.com/"
-    reverbnation: "http://reverbnation.com/"
-    contact: "/"
+    instagram: "https://www.instagram.com/robbd7/"
+    soundcloud: "https://soundcloud.com/robb-hagle"
+    reverbnation: "https://www.reverbnation.com/musician/robbhagle"
+    tiktok: "https://www.tiktok.com/@robbhagle.music"
+    contact: "mailto:contact@robbhagle.com"
 
   # Artist information
   authors:
-    stage:
-      name: "Stage"
-      description: "Enter an artist description here."
-      image: "/images/avatar.png"
+    robbhagle:
+      name: "Robb Hagle"
+      description: "Folk musician from Fort Collins, CO blending classic acoustic folk songs with modern reinterpretations."
+      image: "/images/robb-hagle-profile.jpg"
       link: "/"
 
   # Navbar links
