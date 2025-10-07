@@ -10,10 +10,24 @@
   <div id="main-container" class="container">
     <div class="col-sm-12">
       <article>
-        <h3>Recent Posts</h3>
+        <h3>About</h3>
         <hr />
-        {{ range first 5 (where .Data.Pages "Section" "post") }}
-           {{ .Render "summary"}}
+        {{ range where .Site.RegularPages "Section" "artist" }}
+          <p>{{ .Params.description }}</p>
+          {{ .Content }}
+        {{ end }}
+      </article>
+
+      <article>
+        <h3>Music</h3>
+        <hr />
+        {{ $albums := where .Site.RegularPages "Section" "album" }}
+        {{ if $albums }}
+          {{ range $albums }}
+            {{ .Render "summary"}}
+          {{ end }}
+        {{ else }}
+          <p>Music coming soon! Check back for album releases and recordings.</p>
         {{ end }}
       </article>
     </div>

@@ -28,11 +28,9 @@ params:
 
   # Navbar links
   navbar:
-    blog: "/post/"
-    bio: "/"
     music: "/album/"
-    events: "/event/"
-    media: "/media/"
+    sync: "/sync/"
+    shows: "/show/"
 
   fonts: "Lato:300,500,700"
   maps: "true"

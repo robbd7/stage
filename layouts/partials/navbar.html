@@ -11,11 +11,9 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        {{ with .Site.Params.navbar.blog }}<li><a href="{{ . }}">Blog</a></li>{{ end }}
-        {{ with .Site.Params.navbar.bio }}<li><a href="{{ . }}">Bio</a></li>{{ end }}
         {{ with .Site.Params.navbar.music }}<li><a href="{{ . }}">Music</a></li>{{ end }}
-        {{ with .Site.Params.navbar.media }}<li><a href="{{ . }}">Media</a></li>{{ end }}
-        {{ with .Site.Params.navbar.events }}<li><a href="{{ . }}">Events</a></li>{{ end }}
+        {{ with .Site.Params.navbar.sync }}<li><a href="{{ . }}">Sync</a></li>{{ end }}
+        {{ with .Site.Params.navbar.shows }}<li><a href="{{ . }}">Shows</a></li>{{ end }}
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{ with .Site.Params.social.instagram }}<li><a href="{{ . }}"><i class="fa fa-instagram"></i></a></li>{{ end }}
