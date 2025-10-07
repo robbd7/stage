@@ -10,7 +10,6 @@
   <div id="main-container" class="container">
     <div class="col-sm-12">
       <article>
-        <h3>About</h3>
         <hr />
         {{ range where .Site.RegularPages "Section" "artist" }}
           <p>{{ .Params.description }}</p>
