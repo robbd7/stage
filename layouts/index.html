@@ -8,27 +8,18 @@
 </div>
 <div class="index-wrapper">
   <div id="main-container" class="container">
-    <div class="col-sm-12">
-      <article>
-        <hr />
-        {{ range where .Site.RegularPages "Section" "artist" }}
-          <p>{{ .Params.description }}</p>
-          {{ .Content }}
-        {{ end }}
-      </article>
+    <div class="col-sm-12" style="text-align: center; padding: 40px 0;">
+      {{ range where .Site.RegularPages "Section" "artist" }}
+        <p style="font-size: 1.2em; margin-bottom: 30px;">{{ .Params.description }}</p>
+      {{ end }}
 
-      <article>
-        <h3>Music</h3>
-        <hr />
-        {{ $albums := where .Site.RegularPages "Section" "album" }}
-        {{ if $albums }}
-          {{ range $albums }}
-            {{ .Render "summary"}}
-          {{ end }}
-        {{ else }}
-          <p>Music coming soon! Check back for album releases and recordings.</p>
-        {{ end }}
-      </article>
+      <div style="font-size: 2em;">
+        {{ with .Site.Params.social.instagram }}<a href="{{ . }}" style="margin: 0 15px; color: #333;"><i class="fab fa-instagram"></i></a>{{ end }}
+        {{ with .Site.Params.social.tiktok }}<a href="{{ . }}" style="margin: 0 15px; color: #333;"><i class="fab fa-tiktok"></i></a>{{ end }}
+        {{ with .Site.Params.social.soundcloud }}<a href="{{ . }}" style="margin: 0 15px; color: #333;"><i class="fab fa-soundcloud"></i></a>{{ end }}
+        {{ with .Site.Params.social.reverbnation }}<a href="{{ . }}" style="margin: 0 15px; color: #333;"><i class="fa fa-star"></i></a>{{ end }}
+        {{ with .Site.Params.social.contact }}<a href="{{ . }}" style="margin: 0 15px; color: #333;"><i class="fa fa-envelope"></i></a>{{ end }}
+      </div>
     </div>
   </div>
 </div>
