@@ -6,7 +6,7 @@ excerpt: "Colorado-based folk musician blending analog warmth, intricate fingers
 description: "Colorado-based folk musician blending analog warmth, intricate fingerstyle guitar, and storytelling steeped in tradition and introspection."
 ---
 
-# About Robb Hagle
+# History
 
 Robb Hagle is a vintage folk artist based in Fort Collins, Colorado. His music blends classic acoustic folk traditions with modern reinterpretations, creating a unique sound that bridges generations.
 
