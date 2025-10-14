@@ -1,0 +1,19 @@
+{{ partial "head.html" . }}
+{{ partial "navbar.html" . }}
+<div class="wrapper">
+  {{ with .Params.coverimage }}
+    <div class="article-cover" data-stellar-background-ratio="0.25" style="background-image: url({{ . }})"></div>
+  {{ end }}
+  <article id="main-container" >
+    <header class="container article-header">
+        <h1 class="title">{{ .Title }}</h1>
+        <hr />
+    </header>
+    <section id="article-content" class="container article-content">
+      <div class="col-sm-12">
+        {{ .Content }}
+      </div>
+    </section>
+  </article>
+</div>
+{{ partial "footer.html" . }}
