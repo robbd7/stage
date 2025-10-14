@@ -2,8 +2,8 @@
 title: "Robb Hagle"
 coverimage: "/images/robb-hagle-cover.jpg"
 author: "robbhagle"
-excerpt: "Folk musician from Fort Collins, CO blending classic acoustic folk songs with modern reinterpretations."
-description: "Folk musician from Fort Collins, CO blending classic acoustic folk songs with modern reinterpretations."
+excerpt: "Colorado-based folk musician blending analog warmth, intricate fingerstyle guitar, and storytelling steeped in tradition and introspection."
+description: "Colorado-based folk musician blending analog warmth, intricate fingerstyle guitar, and storytelling steeped in tradition and introspection."
 ---
 
 # About Robb Hagle
