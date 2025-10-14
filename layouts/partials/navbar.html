@@ -9,7 +9,8 @@
       </button>
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ .Site.Params.title }}</a>
     </div>
-    <div class="navbar-collapse collapse">
+    <!--
+      <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         {{ with .Site.Params.navbar.about }}<li><a href="{{ . }}">About</a></li>{{ end }}
         {{ with .Site.Params.navbar.music }}<li><a href="{{ . }}">Music</a></li>{{ end }}
